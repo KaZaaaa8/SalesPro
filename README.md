@@ -1,66 +1,158 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## 🚀 Modern POS (Point of Sale) 
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-11-red?style=flat-square&logo=laravel) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-blue?style=flat-square&logo=tailwind-css) ![PHP](https://img.shields.io/badge/PHP-%3E%3D8.1-purple?style=flat-square&logo=php) ![MySQL](https://img.shields.io/badge/MySQL-Database-blue?style=flat-square&logo=mysql)
 
-## About Laravel
+**Sistem Kasir Modern dengan Antarmuka Tema Gelap, Dibangun Menggunakan Laravel Breeze & Tailwind CSS.**
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ✨ Fitur Utama
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🎨 Antarmuka Modern dengan Tema Gelap
+- Desain **Glassmorphism** yang elegan
+- **Responsif** untuk berbagai perangkat
+- Halaman autentikasi kustom
 
-## Learning Laravel
+### 🛍️ Manajemen Produk
+- Daftar produk dengan gambar
+- Pengorganisasian kategori
+- Manajemen stok
+- Fitur unggah gambar
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 💰 Sistem Transaksi
+- **Pembaruan keranjang real-time**
+- **Pencarian produk dinamis**
+- **Perhitungan pajak otomatis** (12%)
+- **Pemrosesan pembayaran**
+- **Kalkulasi kembalian**
+- **Riwayat transaksi**
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 👥 Manajemen Pengguna
+- **Akses berbasis peran** (Admin/Cashier)
+- **CRUD pengguna**
+- **Keamanan autentikasi**
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 🛠️ Teknologi yang Digunakan
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- 🚀 **Laravel 11 + Breeze** *(Framework backend modern)*
+- 🎨 **Tailwind CSS** *(Styling fleksibel & cepat)*
+- 🔗 **Font Awesome** *(Ikon yang kaya dan elegan)*
+- 🛢️ **MySQL** *(Database handal untuk penyimpanan data)*
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## ⚡ Persyaratan Minimum
 
-## Contributing
+- PHP **>= 8.1**
+- MySQL Database
+- Composer *(untuk mengelola dependensi)*
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🔧 Cara Instalasi
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```bash
+# 1. Clone repository
+$ git clone https://github.com/KaZaaaa8/SalesPro.git
 
-## Security Vulnerabilities
+# 2. Masuk ke folder proyek
+$ cd SalesPro
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# 3. Install dependensi
+$ composer install
 
-## License
+# 4. Konfigurasi environment
+$ cp .env.example .env
+$ php artisan key:generate
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# 5. Atur database di file .env
+DB_DATABASE=pos_db
+DB_USERNAME=root
+DB_PASSWORD=
+
+# 6. Jalankan migrasi database
+$ php artisan migrate
+
+# 7. Buat link ke penyimpanan
+$ php artisan storage:link
+
+# 8. Jalankan server
+$ php artisan serve
+```
+
+---
+
+## 📁 Struktur Proyek
+
+```plaintext
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── ProductController.php
+│   │   │   ├── TransactionController.php
+│   │   │   └── UserController.php
+│   │   └── Middleware/
+│   │       └── AdminMiddleware.php
+├── resources/
+│   └── views/
+│       ├── auth/
+│       │   ├── login.blade.php
+│       │   └── forgot-password.blade.php
+│       ├── products/
+│       ├── transactions/
+│       └── users/
+└── routes/
+    └── web.php
+```
+
+---
+
+## 🚀 Fitur yang Sedang Dikembangkan
+
+- 📊 **Laporan Penjualan** *(Analisis transaksi harian, mingguan, bulanan)*
+- ⚠️ **Peringatan Stok Habis** *(Notifikasi otomatis untuk stok rendah)*
+- 🧾 **Pembuatan Struk dalam Format PDF**
+
+---
+
+## 🔒 Keamanan
+
+- 🛡️ **Autentikasi berbasis peran** *(Admin & Staff memiliki izin berbeda)*
+- 🔐 **Rute admin yang dilindungi** *(Akses terbatas untuk user tertentu)*
+- 📂 **Keamanan unggah file** *(Mencegah eksploitasi file berbahaya)*
+- 🔄 **Proteksi CSRF** *(Mencegah serangan keamanan di formulir)*
+
+---
+
+## 🤝 Kontribusi
+
+💡 Ingin berkontribusi? Silakan buat **Pull Request** atau buka **Issue** untuk perbaikan dan fitur baru.
+
+---
+
+## 📜 Lisensi
+
+[MIT License](https://opensource.org/licenses/MIT)
+
+---
+
+## ❓ FAQ
+
+**Q: Bagaimana cara menambahkan produk baru?**  
+A: Admin bisa menambahkan produk melalui halaman admin di menu Produk.
+
+**Q: Bagaimana cara reset password?**  
+A: Klik tombol "Lupa Password" di halaman login dan ikuti instruksi.
+
+---
+
+## 💡 Kredit & Teknologi yang Digunakan
+
+- 🎵 **Laravel** *(Framework PHP yang kuat)*
+- 🎨 **Tailwind CSS** *(Framework CSS modern)*
+- 🚀 **Font Awesome** *(Ikon yang stylish dan profesional)*
+
+🚀 **Dikembangkan dengan ❤️ oleh [Muhammad Faza Husnan](https://github.com/KaZaaaa8)**  
+📧 **Email:** fazahusnan06@gmail.com
